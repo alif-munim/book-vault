@@ -36,3 +36,81 @@
     transform: rotate(360deg);
   }
 }
+
+.Nav {
+  width: 100vw;
+  background-color: #3b3b3b;
+  margin-bottom: 1.5em;
+  padding: 15px;
+  color: white;
+  display: block;
+}
+
+.Movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 150px;
+  width: 300px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.15);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.MovieList {
+  margin-top: 3em;
+  min-height: 50vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.AddMovie {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.AddMovie input[type=text]{
+  padding: 10px;
+  margin: 5px;
+}
+
+.AddMovie button {
+  padding: 10px;
+  margin: 5px;
+}
+
+.AddMovie textarea {
+  margin: 5px;
+}
+
+@media screen and (max-width: 1300px) {
+  .MovieList {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  
+}
+
+
+@media screen and (max-width: 975px) {
+  .MovieList {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  
+}
+
+@media screen and (max-width: 650px) {
+  .MovieList {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  
+}
